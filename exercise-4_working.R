@@ -67,7 +67,7 @@ dat <- matrix(1:100, nrow=10)
 # Lists are tough, we will talk about them more in the subsetting
 # section but here is a short introduction.
 
-mylist <- list(1:3, "a", matrix(1:10, nrow=2))
+mylist
 
 # take a look at it. The information under each
 # double bracket is a single element in the list
@@ -142,7 +142,11 @@ new_function("R", "is powerful")
 # standard deviation of a vector. You will want to create a vector
 # with two values (mean and standard deviation) and return this vector
 
-
+# > myfunc <- function(inpt1) {
+#   +    return(c(mean(inpt1),sd(inpt1)))
+#   + }
+# > myfunc(1:10)
+# [1] 5.50000 3.02765
 
 
 
